@@ -18,3 +18,10 @@ export const Small: StoryObj<TextProps> = {
 export const Large: StoryObj<TextProps> = {
   args: { size: 'lg' }
 }
+
+export const CustomComponent: StoryObj<TextProps> = {
+  args: {
+    asChild: true,
+    children: ('<p>a < /p>')
+}
+}
